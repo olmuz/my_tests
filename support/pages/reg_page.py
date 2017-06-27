@@ -1,5 +1,6 @@
-from base_page import BasePage
 from selenium.common.exceptions import NoSuchElementException
+
+from support.pages.base_page import BasePage
 
 
 class RegPage(BasePage):

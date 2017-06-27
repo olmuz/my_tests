@@ -1,10 +1,10 @@
 import unittest
 
+from header import Header
 from selenium import webdriver
 
-from header import Header
-from link import Link
-from login_page import LoginPage
+from support.pages.login_page import LoginPage
+from support.ui.link import Link
 
 
 class TestFooter(unittest.TestCase):

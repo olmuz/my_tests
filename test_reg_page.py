@@ -1,7 +1,9 @@
 import unittest
-from selenium import webdriver
-from reg_page import RegPage
 from random import randint
+
+from selenium import webdriver
+
+from support.pages.reg_page import RegPage
 
 
 class test_reg_page(unittest.TestCase):

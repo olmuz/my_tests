@@ -1,6 +1,9 @@
 import unittest
+
 from selenium import webdriver
-from login_page import LoginPage
+
+from support.pages.login_page import LoginPage
+
 
 class TestLoginPage(unittest.TestCase):
 

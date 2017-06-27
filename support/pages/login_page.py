@@ -1,4 +1,4 @@
-from base_page import BasePage
+from support.pages.base_page import BasePage
 
 class LoginPage(BasePage):
     def __init__(self, browser):
@@ -13,3 +13,12 @@ class LoginPage(BasePage):
 
     def open(self):
         self.browser = self.browser.get(self.url)
+
+    def login(self, email, pwd):
+        email_input = self.find_element('email')
+        pwd_input = self.find_element('password')
+        email_input.clear()
+        email_input.send_keys(email)
+        pwd_input.send_keys(pwd)
+
+        self.find_element('login_button').click()
