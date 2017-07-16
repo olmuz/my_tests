@@ -1,5 +1,5 @@
 from behave import given, when, then 
-import support.pages as pages 
+import support.pages as pages
 import support.ui as ui 
  
 @given("I am on 'Login' page") 
